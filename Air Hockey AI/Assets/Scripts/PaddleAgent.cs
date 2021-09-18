@@ -11,6 +11,8 @@ public class PaddleAgent : Agent
     public GameObject opponent;
     public GameObject puck;
 
+    bool endEpisode = false;
+
     Rigidbody rb, puckRb;
     Vector3 startPos, puckStartPos;
 
@@ -24,6 +26,7 @@ public class PaddleAgent : Agent
 
     public override void OnEpisodeBegin()
     {
+        endEpisode = false;
         transform.localPosition = startPos;
         puck.transform.localPosition = puckStartPos;
         puckRb.velocity = Vector3.zero;
@@ -31,13 +34,21 @@ public class PaddleAgent : Agent
 
     public override void Heuristic(float[] actionsOut)
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        if(Physics.Raycast(ray, out hit))
+        if (Input.GetMouseButton(0))
         {
-            Vector3 dir = hit.point - transform.position;
-            actionsOut[0] = dir.x;
-            actionsOut[1] = dir.z;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))
+            {
+                Vector3 dir = hit.point - transform.position;
+                actionsOut[0] = dir.x;
+                actionsOut[1] = dir.z;
+            }
+        }
+        else
+        {
+            actionsOut[0] = 0;
+            actionsOut[1] = 0;
         }
     }
 
@@ -46,6 +57,8 @@ public class PaddleAgent : Agent
     public override void OnActionReceived(float[] vectorAction)
     {
         rb.velocity = new Vector3(vectorAction[0] * moveSpeed, 0, vectorAction[1] * moveSpeed);
+
+        if (endEpisode) EndEpisode();
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -54,5 +67,16 @@ public class PaddleAgent : Agent
         sensor.AddObservation(opponent.transform.localPosition);
         sensor.AddObservation(puck.transform.localPosition);
         sensor.AddObservation(puckRb.velocity);
+    }
+    public void Win()
+    {
+        AddReward(1);
+        endEpisode = true;
+    }
+
+    public void Lose()
+    {
+        AddReward(-1);
+        endEpisode = true;
     }
 }
