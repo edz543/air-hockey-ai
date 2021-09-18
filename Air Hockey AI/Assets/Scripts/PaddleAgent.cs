@@ -11,11 +11,12 @@ public class PaddleAgent : Agent
     public GameObject opponent;
     public GameObject puck;
 
-    Rigidbody puckRb;
+    Rigidbody rb, puckRb;
     Vector3 startPos, puckStartPos;
 
     public override void Initialize()
     {
+        rb = GetComponent<Rigidbody>();
         puckRb = puck.GetComponent<Rigidbody>();
         startPos = transform.localPosition;
         puckStartPos = puck.transform.localPosition;
@@ -30,15 +31,21 @@ public class PaddleAgent : Agent
 
     public override void Heuristic(float[] actionsOut)
     {
-        actionsOut[0] = Input.GetAxis("Horizontal");
-        actionsOut[1] = Input.GetAxis("Vertical");
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if(Physics.Raycast(ray, out hit))
+        {
+            Vector3 dir = hit.point - transform.position;
+            actionsOut[0] = dir.x;
+            actionsOut[1] = dir.z;
+        }
     }
 
     // 0: X movement
     // 1: Z movement
     public override void OnActionReceived(float[] vectorAction)
     {
-        //cc.Move(new Vector3(vectorAction[0] * moveSpeed, 0, vectorAction[1] * moveSpeed));
+        rb.velocity = new Vector3(vectorAction[0] * moveSpeed, 0, vectorAction[1] * moveSpeed);
     }
 
     public override void CollectObservations(VectorSensor sensor)
