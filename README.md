@@ -1,2 +1,2 @@
-# Air Hockey AI
+# Air-Hockey-AI
  

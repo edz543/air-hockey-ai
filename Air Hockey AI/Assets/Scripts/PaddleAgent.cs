@@ -11,13 +11,11 @@ public class PaddleAgent : Agent
     public GameObject opponent;
     public GameObject puck;
 
-    CharacterController cc;
     Rigidbody puckRb;
     Vector3 startPos, puckStartPos;
 
     public override void Initialize()
     {
-        cc = GetComponent<CharacterController>();
         puckRb = puck.GetComponent<Rigidbody>();
         startPos = transform.localPosition;
         puckStartPos = puck.transform.localPosition;
@@ -40,7 +38,7 @@ public class PaddleAgent : Agent
     // 1: Z movement
     public override void OnActionReceived(float[] vectorAction)
     {
-        cc.Move(new Vector3(vectorAction[0] * moveSpeed, 0, vectorAction[1] * moveSpeed));
+        //cc.Move(new Vector3(vectorAction[0] * moveSpeed, 0, vectorAction[1] * moveSpeed));
     }
 
     public override void CollectObservations(VectorSensor sensor)
