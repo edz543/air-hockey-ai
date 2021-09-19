@@ -7,10 +7,13 @@ using Unity.MLAgents.Actuators;
 
 public class PaddleAgent : Agent
 {
+    public bool training = false;
     public float moveSpeed = 1f;
+    public bool player;
 
     public GameObject opponent, puck;
     public GameObject goal, opponentGoal;
+    public GameManager gameManager;
 
     bool endEpisode = false;
 
@@ -79,6 +82,11 @@ public class PaddleAgent : Agent
     {
         AddReward(1f);
         endEpisode = true;
+
+        if (!training)
+        {
+            gameManager.IncreaseScore(player);
+        }
     }
 
     public void Lose()
