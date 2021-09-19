@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
+using Unity.MLAgents.Actuators;
 
 public class PaddleAgent : Agent
 {
     public float moveSpeed = 1f;
 
-    public GameObject opponent;
-    public GameObject puck;
+    public GameObject opponent, puck;
+    public GameObject goal, opponentGoal;
 
     bool endEpisode = false;
 
@@ -32,8 +33,10 @@ public class PaddleAgent : Agent
         puckRb.velocity = Vector3.zero;
     }
 
-    public override void Heuristic(float[] actionsOut)
+    public override void Heuristic(in ActionBuffers actionsOut)
     {
+        var continuousActionsOut = actionsOut.ContinuousActions;
+
         if (Input.GetMouseButton(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -41,42 +44,43 @@ public class PaddleAgent : Agent
             if (Physics.Raycast(ray, out hit))
             {
                 Vector3 dir = hit.point - transform.position;
-                actionsOut[0] = dir.x;
-                actionsOut[1] = dir.z;
+                continuousActionsOut[0] = dir.x;
+                continuousActionsOut[1] = dir.z;
             }
         }
         else
         {
-            actionsOut[0] = 0;
-            actionsOut[1] = 0;
+            continuousActionsOut[0] = 0;
+            continuousActionsOut[1] = 0;
         }
     }
 
     // 0: X movement
     // 1: Z movement
-    public override void OnActionReceived(float[] vectorAction)
+    public override void OnActionReceived(ActionBuffers actions)
     {
-        rb.velocity = new Vector3(vectorAction[0] * moveSpeed, 0, vectorAction[1] * moveSpeed);
+        var continuousActions = actions.ContinuousActions;
+        rb.velocity = new Vector3(continuousActions[0] * moveSpeed, 0, continuousActions[1] * moveSpeed);
 
         if (endEpisode) EndEpisode();
     }
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        sensor.AddObservation(transform.localPosition);
-        sensor.AddObservation(opponent.transform.localPosition);
-        sensor.AddObservation(puck.transform.localPosition);
-        sensor.AddObservation(puckRb.velocity);
+        //sensor.AddObservation(transform.localPosition);
+        //sensor.AddObservation(opponent.transform.localPosition);
+        //sensor.AddObservation(puck.transform.localPosition);
+        //sensor.AddObservation(puckRb.velocity);
     }
     public void Win()
     {
-        AddReward(1);
+        AddReward(1f);
         endEpisode = true;
     }
 
     public void Lose()
     {
-        AddReward(-1);
+        AddReward(-1f);
         endEpisode = true;
     }
 }

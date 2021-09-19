@@ -1,0 +1,2 @@
+model_checkpoint_path: "PaddleAgent-371736.ckpt"
+all_model_checkpoint_paths: "PaddleAgent-371736.ckpt"

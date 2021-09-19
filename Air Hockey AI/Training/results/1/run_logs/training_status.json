@@ -1,0 +1,47 @@
+{
+    "PaddleAgent": {
+        "checkpoints": [
+            {
+                "steps": 999730,
+                "file_path": "results\\1\\PaddleAgent\\PaddleAgent-999730.nn",
+                "reward": 0.0,
+                "creation_time": 1631985536.99689
+            },
+            {
+                "steps": 1499851,
+                "file_path": "results\\1\\PaddleAgent\\PaddleAgent-1499851.nn",
+                "reward": 0.0,
+                "creation_time": 1631986031.674744
+            },
+            {
+                "steps": 1999891,
+                "file_path": "results\\1\\PaddleAgent\\PaddleAgent-1999891.nn",
+                "reward": -0.5,
+                "creation_time": 1631986533.503344
+            },
+            {
+                "steps": 2499514,
+                "file_path": "results\\1\\PaddleAgent\\PaddleAgent-2499514.nn",
+                "reward": 0.0,
+                "creation_time": 1631987043.8293328
+            },
+            {
+                "steps": 2702350,
+                "file_path": "results\\1\\PaddleAgent\\PaddleAgent-2702350.nn",
+                "reward": null,
+                "creation_time": 1631987245.668429
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2702350,
+            "file_path": "results\\1\\PaddleAgent.nn",
+            "reward": null,
+            "creation_time": 1631987245.668429
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.20.0",
+        "tensorflow_version": "2.3.3"
+    }
+}

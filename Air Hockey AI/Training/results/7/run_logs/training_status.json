@@ -1,0 +1,23 @@
+{
+    "PaddleAgent": {
+        "checkpoints": [
+            {
+                "steps": 211620,
+                "file_path": "results\\7\\PaddleAgent\\PaddleAgent-211620.nn",
+                "reward": null,
+                "creation_time": 1632001972.8959098
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 211620,
+            "file_path": "results\\7\\PaddleAgent.nn",
+            "reward": null,
+            "creation_time": 1632001972.8959098
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.20.0",
+        "tensorflow_version": "2.3.3"
+    }
+}
