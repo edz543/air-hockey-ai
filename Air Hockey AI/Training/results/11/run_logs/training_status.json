@@ -1,0 +1,66 @@
+{
+    "PaddleAgent": {
+        "checkpoints": [
+            {
+                "steps": 4499882,
+                "file_path": "results\\11\\PaddleAgent\\PaddleAgent-4499882.onnx",
+                "reward": -1.0,
+                "creation_time": 1632043456.9620209,
+                "auxillary_file_paths": [
+                    "results\\11\\PaddleAgent\\PaddleAgent-4499882.pt"
+                ]
+            },
+            {
+                "steps": 4999502,
+                "file_path": "results\\11\\PaddleAgent\\PaddleAgent-4999502.onnx",
+                "reward": -0.9545454545454546,
+                "creation_time": 1632045715.0162368,
+                "auxillary_file_paths": [
+                    "results\\11\\PaddleAgent\\PaddleAgent-4999502.pt"
+                ]
+            },
+            {
+                "steps": 5499440,
+                "file_path": "results\\11\\PaddleAgent\\PaddleAgent-5499440.onnx",
+                "reward": null,
+                "creation_time": 1632047967.1475675,
+                "auxillary_file_paths": [
+                    "results\\11\\PaddleAgent\\PaddleAgent-5499440.pt"
+                ]
+            },
+            {
+                "steps": 5999190,
+                "file_path": "results\\11\\PaddleAgent\\PaddleAgent-5999190.onnx",
+                "reward": 0.0,
+                "creation_time": 1632050173.884683,
+                "auxillary_file_paths": [
+                    "results\\11\\PaddleAgent\\PaddleAgent-5999190.pt"
+                ]
+            },
+            {
+                "steps": 6445276,
+                "file_path": "results\\11\\PaddleAgent\\PaddleAgent-6445276.onnx",
+                "reward": null,
+                "creation_time": 1632052140.398318,
+                "auxillary_file_paths": [
+                    "results\\11\\PaddleAgent\\PaddleAgent-6445276.pt"
+                ]
+            }
+        ],
+        "elo": 1200.0,
+        "final_checkpoint": {
+            "steps": 6445276,
+            "file_path": "results\\11\\PaddleAgent.onnx",
+            "reward": null,
+            "creation_time": 1632052140.398318,
+            "auxillary_file_paths": [
+                "results\\11\\PaddleAgent\\PaddleAgent-6445276.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1"
+    }
+}
