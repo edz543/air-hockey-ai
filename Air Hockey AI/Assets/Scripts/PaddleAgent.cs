@@ -43,7 +43,7 @@ public class PaddleAgent : Agent
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-                Vector3 dir = hit.point - transform.position;
+                Vector3 dir = transform.InverseTransformPoint(hit.point).normalized;
                 continuousActionsOut[0] = dir.x;
                 continuousActionsOut[1] = dir.z;
             }
@@ -60,7 +60,9 @@ public class PaddleAgent : Agent
     public override void OnActionReceived(ActionBuffers actions)
     {
         var continuousActions = actions.ContinuousActions;
-        rb.velocity = new Vector3(continuousActions[0] * moveSpeed, 0, continuousActions[1] * moveSpeed);
+        Vector3 xVel = transform.right * moveSpeed * continuousActions[0];
+        Vector3 zVel = transform.forward * moveSpeed * continuousActions[1];
+        rb.velocity = xVel + zVel;
 
         if (endEpisode) EndEpisode();
     }
@@ -72,6 +74,7 @@ public class PaddleAgent : Agent
         //sensor.AddObservation(puck.transform.localPosition);
         //sensor.AddObservation(puckRb.velocity);
     }
+
     public void Win()
     {
         AddReward(1f);

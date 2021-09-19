@@ -6791,6 +6791,18 @@ PrefabInstance:
       propertyPath: opponentGoal
       value: 
       objectReference: {fileID: 5145107879757213843}
+    - target: {fileID: 3908729564882650028, guid: c7badf1a36e6e4f4fa5e97dd1db8deff, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ba329e04dbf7a184a83fbf5a043c74fb, type: 2}
+    - target: {fileID: 3908729564922953828, guid: c7badf1a36e6e4f4fa5e97dd1db8deff, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ba329e04dbf7a184a83fbf5a043c74fb, type: 2}
+    - target: {fileID: 5859908890600028474, guid: c7badf1a36e6e4f4fa5e97dd1db8deff, type: 3}
+      propertyPath: DecisionPeriod
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7badf1a36e6e4f4fa5e97dd1db8deff, type: 3}
 --- !u!4 &3807127106075409148 stripped
@@ -6960,6 +6972,10 @@ PrefabInstance:
       propertyPath: opponentGoal
       value: 
       objectReference: {fileID: 3739644361155791681}
+    - target: {fileID: 5859908890600028474, guid: c7badf1a36e6e4f4fa5e97dd1db8deff, type: 3}
+      propertyPath: DecisionPeriod
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7badf1a36e6e4f4fa5e97dd1db8deff, type: 3}
 --- !u!1 &210324731942917033 stripped
