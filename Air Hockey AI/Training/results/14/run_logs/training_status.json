@@ -1,0 +1,30 @@
+{
+    "PaddleAgent": {
+        "elo": 1200.0,
+        "checkpoints": [
+            {
+                "steps": 1790,
+                "file_path": "results\\14\\PaddleAgent\\PaddleAgent-1790.onnx",
+                "reward": 0.3333333333333333,
+                "creation_time": 1632065561.813765,
+                "auxillary_file_paths": [
+                    "results\\14\\PaddleAgent\\PaddleAgent-1790.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1790,
+            "file_path": "results\\14\\PaddleAgent.onnx",
+            "reward": 0.3333333333333333,
+            "creation_time": 1632065561.813765,
+            "auxillary_file_paths": [
+                "results\\14\\PaddleAgent\\PaddleAgent-1790.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1"
+    }
+}

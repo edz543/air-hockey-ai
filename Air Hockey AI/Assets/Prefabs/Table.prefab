@@ -6551,7 +6551,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e01141c421b46254a84fb2cdc765ccdd, type: 2}
+  - {fileID: 2100000, guid: 3498f069ac3fbb74ba20ca581372b5d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6801,7 +6801,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ba329e04dbf7a184a83fbf5a043c74fb, type: 2}
     - target: {fileID: 5859908890600028474, guid: c7badf1a36e6e4f4fa5e97dd1db8deff, type: 3}
       propertyPath: DecisionPeriod
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7badf1a36e6e4f4fa5e97dd1db8deff, type: 3}
@@ -6851,7 +6851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 965998237279140442, guid: f2267a8b81c9e51429c23748d59cdeae, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 965998237279140442, guid: f2267a8b81c9e51429c23748d59cdeae, type: 3}
       propertyPath: m_LocalRotation.x
@@ -6859,7 +6859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 965998237279140442, guid: f2267a8b81c9e51429c23748d59cdeae, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 965998237279140442, guid: f2267a8b81c9e51429c23748d59cdeae, type: 3}
       propertyPath: m_LocalRotation.z
@@ -6871,7 +6871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 965998237279140442, guid: f2267a8b81c9e51429c23748d59cdeae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 965998237279140442, guid: f2267a8b81c9e51429c23748d59cdeae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -6974,7 +6974,7 @@ PrefabInstance:
       objectReference: {fileID: 3739644361155791681}
     - target: {fileID: 5859908890600028474, guid: c7badf1a36e6e4f4fa5e97dd1db8deff, type: 3}
       propertyPath: DecisionPeriod
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7badf1a36e6e4f4fa5e97dd1db8deff, type: 3}
