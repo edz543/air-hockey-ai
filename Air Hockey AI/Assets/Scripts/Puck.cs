@@ -7,7 +7,7 @@ public class Puck : MonoBehaviour
     public PaddleAgent player, opponent;
 
     int touching = 0;
-    float timer = 0, timerMax = 2;
+    float timer = 0, timerMax = 3;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -38,8 +38,8 @@ public class Puck : MonoBehaviour
 
         if(timer >= timerMax)
         {
-            player.AddReward(-0.01f);
-            opponent.AddReward(-0.01f);
+            player.AddReward(-0.001f);
+            opponent.AddReward(-0.001f);
         }
     }
 }
