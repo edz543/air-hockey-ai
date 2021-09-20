@@ -2038,6 +2038,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 963857118665462142, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
+      propertyPath: m_BehaviorType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3807127106075409149, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
       propertyPath: MaxStep
       value: 5000
@@ -2045,6 +2049,10 @@ PrefabInstance:
     - target: {fileID: 3807127106075409149, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
       propertyPath: training
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278092152443254824, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
+      propertyPath: m_BehaviorType
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
@@ -2159,6 +2167,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 963857118665462142, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
+      propertyPath: m_BehaviorType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3807127106075409149, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
       propertyPath: MaxStep
       value: 5000
@@ -2166,6 +2178,10 @@ PrefabInstance:
     - target: {fileID: 3807127106075409149, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
       propertyPath: training
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278092152443254824, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
+      propertyPath: m_BehaviorType
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
@@ -2444,6 +2460,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 963857118665462142, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
+      propertyPath: m_BehaviorType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3807127106075409149, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
       propertyPath: MaxStep
       value: 5000
@@ -2451,6 +2471,10 @@ PrefabInstance:
     - target: {fileID: 3807127106075409149, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
       propertyPath: training
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278092152443254824, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
+      propertyPath: m_BehaviorType
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
@@ -3057,6 +3081,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 963857118665462142, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
+      propertyPath: m_BehaviorType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3807127106075409149, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
       propertyPath: MaxStep
       value: 5000
@@ -3064,6 +3092,10 @@ PrefabInstance:
     - target: {fileID: 3807127106075409149, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
       propertyPath: training
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278092152443254824, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
+      propertyPath: m_BehaviorType
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
@@ -4211,6 +4243,10 @@ PrefabInstance:
       propertyPath: m_Model
       value: 
       objectReference: {fileID: 5022602860645237092, guid: ef5c52f75e0d3d840a2dc4c128290e01, type: 3}
+    - target: {fileID: 963857118665462142, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
+      propertyPath: m_BehaviorType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3807127106075409149, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
       propertyPath: MaxStep
       value: 5000
@@ -4218,6 +4254,10 @@ PrefabInstance:
     - target: {fileID: 3807127106075409149, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
       propertyPath: training
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278092152443254824, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}
+      propertyPath: m_BehaviorType
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce61bc0715e4d3e4d91805d451112f27, type: 3}

@@ -1,0 +1,48 @@
+{
+    "PaddleAgent": {
+        "checkpoints": [
+            {
+                "steps": 499884,
+                "file_path": "results\\21\\PaddleAgent\\PaddleAgent-499884.onnx",
+                "reward": 0.3333333333333333,
+                "creation_time": 1632095861.3471432,
+                "auxillary_file_paths": [
+                    "results\\21\\PaddleAgent\\PaddleAgent-499884.pt"
+                ]
+            },
+            {
+                "steps": 999746,
+                "file_path": "results\\21\\PaddleAgent\\PaddleAgent-999746.onnx",
+                "reward": 0.0,
+                "creation_time": 1632097345.6027749,
+                "auxillary_file_paths": [
+                    "results\\21\\PaddleAgent\\PaddleAgent-999746.pt"
+                ]
+            },
+            {
+                "steps": 1034319,
+                "file_path": "results\\21\\PaddleAgent\\PaddleAgent-1034319.onnx",
+                "reward": -0.3333333333333333,
+                "creation_time": 1632097476.630388,
+                "auxillary_file_paths": [
+                    "results\\21\\PaddleAgent\\PaddleAgent-1034319.pt"
+                ]
+            }
+        ],
+        "elo": 1200.0,
+        "final_checkpoint": {
+            "steps": 1034319,
+            "file_path": "results\\21\\PaddleAgent.onnx",
+            "reward": -0.3333333333333333,
+            "creation_time": 1632097476.630388,
+            "auxillary_file_paths": [
+                "results\\21\\PaddleAgent\\PaddleAgent-1034319.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1"
+    }
+}
