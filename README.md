@@ -1,5 +1,3 @@
-![Preview gif](preview.gif)
-
 # Air-Hockey-AI
 A reinforcement learning agent trained to play air hockey, made using the Unity ML-Agents toolkit!  
 Try to beat the AI yourself here: https://edz123.itch.io/air-hockey-ai  
